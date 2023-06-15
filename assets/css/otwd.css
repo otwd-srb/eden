@@ -210,13 +210,13 @@ h2.title-line::after {
     text-align: center;
 }
 .ads-block {
-    display: block;
+    /* display: block;
     padding: 1em;
     background: rgba(232, 241, 242, 0.8);
     position: relative;
     width: 100%;
     top: 14em;
-    height: 100vh;
+    height: 100vh; */
 }
 
 
@@ -255,7 +255,11 @@ h2.title-line::after {
         display: block;
     }
 }
-
+@media (max-width: 1440px) {
+    .edn-layout {
+        max-width: 1440px;
+    }
+}
 
 
 
