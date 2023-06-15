@@ -207,6 +207,16 @@ h2.title-line::after {
 }
 .edn-side {
     grid-area: side;
+    text-align: center;
+}
+.ads-block {
+    display: block;
+    padding: 1em;
+    background: rgba(232, 241, 242, 0.8);
+    position: relative;
+    width: 100%;
+    top: 14em;
+    height: 100vh;
 }
 
 
