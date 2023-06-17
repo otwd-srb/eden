@@ -24,7 +24,7 @@ by OTWD
 
     --e-light: hsla(203, 14%, 22%, .5);
     --e-dark:  hsla(203, 14%, 22%, 1);
-    --e-white: hsl(0, 0%, 93%);
+    --e-white: hsl(0, 0%, 100%);
     --e-blue: hsla(198, 63%, 38%, 1);
     --e-success: hsla(122, 100%, 25%, 1);
 
@@ -39,6 +39,10 @@ body {
     font-style: normal;
     color: var(--e-body-color);
     -webkit-text-size-adjust: 100%;
+}
+footer {
+    /* position: absolute;
+    bottom: 0; */
 }
 .blue {
     color: var(--e-blue);
@@ -58,21 +62,34 @@ body {
 .btn {
     transition: 0.25s;
 }
+.txt-link {
+    color: var(--e-blue);
+    text-decoration: none;
+}
+.txt-link:hover,
+.txt-link:focus,
+.txt-link:active {
+    text-decoration: underline;
+}
 
 /*main navigation*/
 nav ul li a.nav-link {
     font-weight: 700;
     color: var(--e-dark);
     text-transform: uppercase;
+    padding: 12px 16px;
 }   
 nav ul li a.nav-link:hover,
 nav ul li a.nav-link:active,
-nav ul li a.nav-link:focus {
-    color: var(--e-light);
+nav ul li a.nav-link:focus,
+nav ul li a.nav-link.active {
+    background: rgba(36, 123, 160, 0.1);
+    border-radius: 10px;
 }
 ul.navbar-nav li {
     margin-right: 1rem;
 }
+.navbar-nav .nav-link.active
 .user-item {
     border-left: 1px solid var(--e-light);
     padding-left: 1rem;
@@ -217,6 +234,84 @@ h2.title-line::after {
     width: 100%;
     top: 14em;
     height: 100vh; */
+}
+
+
+/* login & register layout*/
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext,
+.form-floating>.form-select {
+    height: calc(3rem + 2px);
+}
+.form-floating>label {
+    padding: 0.8rem 0.75rem;
+}
+.reg-bgd {
+    background-image: url(/assets/img/login-bgd.png);
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #fff;
+}
+.log-box,
+.reg-box {
+    background-color: var(--e-white);
+    box-shadow: 0px 2px 6px #DCE8EA;
+    border-radius: 20px;
+    font-weight: var(--e-font-semi-bold);
+    padding: 40px;
+    width: 380px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.log-box {
+    position: absolute;
+    left: calc(50% - 380px/2);
+    top: calc(50% - 684px/2);
+    /* position: relative;
+    top: 50%; */
+}
+.reg-box {
+    position: absolute;
+    left: calc(50% - 380px/2);
+    top: calc(50% - 392px/2);
+    /* position: relative;
+    top: 50%; */
+}
+
+
+.log-box h2,
+.reg-box h2 {
+    font-size: var(--e-font-size-500);
+    font-weight: var(--e-font-semi-bold);
+    line-height: 36px;
+}
+.pass-icon {
+    float: right;
+    position: relative;
+    right: 2em;
+    bottom: 2.5em;
+}
+.fb-btn,
+.gg-btn {
+    padding: 10px 16px;
+    text-align: left;
+    font-size: var(--e-font-size-400);
+    border-radius: 10px;
+    font-weight: 700;
+}
+.gg-btn {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+    background: var(--e-white);
+    color: var(--e-dark);
+    border-color: var(--e-white);
+}
+.gg-btn:hover {
+    background-color: #EA4335;
+    border-color: #EA4335;
 }
 
 
