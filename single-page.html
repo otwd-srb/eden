@@ -118,24 +118,19 @@
                     <!-- umrlice layout-->
                     <div class="row">
                         <div class="col-12">
-                            
                             <article class="edn-single-ex-container my-4">
                                 <div class="single-ex-box">
-
                                     <div class="row">
                                         <div class="col-12 col-xl-2">
                                             <img src="/assets/img/john_doe_jonson.jpg" alt="John Doe Jonson" class="ex-img">
                                         </div>
-                                        <div class="col-12 col-xl-10">
+                                        <div class="col-12 col-xl-10 position-relative">
                                             <div class="ex-basic-info-single">
                                                 <h3>John Doe Jonson</h3>
                                                 <p>01.01.1921 - 11.03.2023<br>New York</p>
                                             </div>
                                         </div>
                                     </div>
-
-
-
                                     <!-- <figure>
                                         <img src="/assets/img/john_doe_jonson.jpg" alt="John Doe Jonson" class="ex-img">
                                         <figcaption class=""><h3>John Doe Jonson</h3></figcaption>
@@ -144,7 +139,6 @@
                                             <p>New York</p>
                                         </div>
                                     </figure> -->
-                                    
                                     <div class="ex-details mt-3">
                                         <p>Aenean quis ligula a ante facilisis pellentesque.</p>
                                         <p>Sed finibus augue lectus, quis tincidunt enim pellentesque et. Aenean quis ligula a ante facilisis pellentesque. Proin vitae dolor sed nisi ultricies lobortis eu quis ex. In hac habitasse platea dictumst. Duis porttitor arcu id sem porttitor vehicula. Fusce sodales nisl sit amet aliquam sagittis. Donec blandit dictum nibh a iaculis. Donec eu nisi rhoncus, suscipit lorem ac, convallis erat. Quisque fringilla laoreet imperdiet.</p>
@@ -153,20 +147,28 @@
                                     </div>
                                 </div>
                                 <div class="ex-soc-data mt-3">
-                                    <div class="ex-candle">
-                                        <img src="/assets/img/candle-24x24.png" alt="" class="">
-                                        <span>24</span>
-                                    </div>
-                                    <div class="ex-comments">
-                                        <i class="bi bi-chat"></i>
-                                        <span>24</span>
-                                    </div>
-                                    <div class="ex-share">
-                                        <img src="/assets/img/upload-24x24.png" alt="" class="">
-                                    </div>
-                                    <div class="ex-msg">
-                                        <img src="/assets/img/send-24x24.png" alt="" class="">
-                                    </div>
+                                    <a href="#">
+                                        <div class="ex-candle">
+                                            <img src="/assets/img/candle-24x24.png" alt="" class="">
+                                            <span>24</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="ex-comments">
+                                            <i class="bi bi-chat"></i>
+                                            <span>24</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="ex-share">
+                                            <img src="/assets/img/upload-24x24.png" alt="podeli" class="">
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="ex-msg">
+                                            <img src="/assets/img/send-24x24.png" alt="komentar" class="">
+                                        </div>
+                                    </a>
                                 </div>
                                 <hr>
                             </article>
@@ -178,19 +180,71 @@
                         <div class="col-12 col-xl-10 offset-xl-1">
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                  <button class="nav-link active" id="nav-poruke-tab" data-bs-toggle="tab" data-bs-target="#nav-poruke" type="button" role="tab" aria-controls="nav-poruke" aria-selected="true">PORUKE</button>
-                                  <button class="nav-link" id="nav-foto-tab" data-bs-toggle="tab" data-bs-target="#nav-foto" type="button" role="tab" aria-controls="nav-foto" aria-selected="false">FOTOGRAFIJE</button>
+                                    <button class="nav-link active" id="nav-poruke-tab" data-bs-toggle="tab" data-bs-target="#nav-poruke" type="button" role="tab" aria-controls="nav-poruke" aria-selected="true">PORUKE</button>
+                                    <button class="nav-link" id="nav-foto-tab" data-bs-toggle="tab" data-bs-target="#nav-foto" type="button" role="tab" aria-controls="nav-foto" aria-selected="false">FOTOGRAFIJE</button>
                                 </div>
-                              </nav>
+                            </nav>
 
-                              <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-content mt-5" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-poruke" role="tabpanel" aria-labelledby="nav-poruke-tab" tabindex="0">
-                                    <h2>PORUKE sadržaj</h2>
+                                    <div class="ex-msg-box">
+                                        <p>22.05.2023 14:25</p>
+                                        <p>Aenean quis ligula a ante facilisis pellentesque. Proin vitae dolor sed nisi ultricies lobortis eu quis ex. In hac habitasse platea dictumst. Duis porttitor arcu id sem porttitor vehicula. Fusce sodales nisl sit amet aliquam sagittis. Donec blandit dictum nibh a iaculis. Donec eu nisi rhoncus, suscipit lorem ac, convallis erat.</p>
+                                        <p>John Doe</p>
+                                    </div>
+                                    <div class="ex-msg-box">
+                                        <p>22.05.2023 14:25</p>
+                                        <p>Aenean quis ligula a ante facilisis pellentesque. Proin vitae dolor sed nisi ultricies lobortis eu quis ex. In hac habitasse platea dictumst. Duis porttitor arcu id sem porttitor vehicula. Fusce sodales nisl sit amet aliquam sagittis. Donec blandit dictum nibh a iaculis. Donec eu nisi rhoncus, suscipit lorem ac, convallis erat.</p>
+                                        <p>John Doe</p>
+                                    </div>
+                                    <div class="ex-msg-box">
+                                        <p>22.05.2023 14:25</p>
+                                        <p>Aenean quis ligula a ante facilisis pellentesque. Proin vitae dolor sed nisi ultricies lobortis eu quis ex. In hac habitasse platea dictumst. Duis porttitor arcu id sem porttitor vehicula. Fusce sodales nisl sit amet aliquam sagittis. Donec blandit dictum nibh a iaculis. Donec eu nisi rhoncus, suscipit lorem ac, convallis erat.</p>
+                                        <p>John Doe</p>
+                                    </div>
+                                    <button class="btn btn-primary load-more-btn mt-5"> UČITAJ VIŠE </button>
                                 </div>
                                 <div class="tab-pane fade" id="nav-foto" role="tabpanel" aria-labelledby="nav-foto-tab" tabindex="0">
-                                    <h2>FOTOGRAFIJE sadržaj</h2>
+                                    <div class="row mb-5">
+                                        <div class="col-12 col-xl-6 py-3">
+                                            <div class="ex-img-box">
+                                                <img src="/assets/img/ex-album-img-01.jpg" alt="" class="img-fluid">
+                                                <p>21.05.2023.</p>
+                                                <p>Photo title</p>
+                                                <p>Aenean quis ligula a ante facilisis pellentesque. Proin vitae dolor sed nisi ultricies lobortis eu quis ex.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-xl-6 py-3">
+                                            <div class="ex-img-box">
+                                                <img src="/assets/img/ex-album-img-02.jpg" alt="" class="img-fluid">
+                                                <p>21.05.2023.</p>
+                                                <p>Photo title</p>
+                                                <p>Aenean quis ligula a ante facilisis pellentesque. Proin vitae dolor sed nisi ultricies lobortis eu quis ex.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-5">
+                                        <div class="col-12 col-xl-6 py-3">
+                                            <div class="ex-img-box">
+                                                <img src="/assets/img/ex-album-img-03.jpg" alt="" class="img-fluid">
+                                                <p>21.05.2023.</p>
+                                                <p>Photo title</p>
+                                                <p>Aenean quis ligula a ante facilisis pellentesque. Proin vitae dolor sed nisi ultricies lobortis eu quis ex.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-xl-6 py-3">
+                                            <div class="ex-img-box">
+                                                <img src="/assets/img/ex-album-img-04.jpg" alt="" class="img-fluid">
+                                                <p>21.05.2023.</p>
+                                                <p>Photo title</p>
+                                                <p>Aenean quis ligula a ante facilisis pellentesque. Proin vitae dolor sed nisi ultricies lobortis eu quis ex.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary load-more-btn mt-5"> UČITAJ VIŠE </button>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -199,11 +253,46 @@
         <!-- content start-->
 
         <!--  footer start-->
-        <footer class="footer mt-5 py-3 d-none d-sm-block">
-            <div class="container text-center">
-                <div class="row justify-content-center">
+        <footer class="footer mt-5 py-3">
+            <div class="container text-center d-none d-sm-block">
+                <div class="row justify-content-md-center">
                     <div class="col-md-auto">
                         <p><span class="text-muted">Place sticky footer content here.</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container mob-footer d-block d-sm-none">
+                <div class="row text-center">
+                    <div class="col-4">
+                        <a href="#" class="footer-link">
+                            <i class="bi bi-chat mx-4 position-relative">
+                                <span class="position-absolute top-0 start-100 translate-middle badge">+9<span class="visually-hidden">unread messages</span></span>
+                            </i><br>Notifikacije
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="footer-link active">
+                            <!-- <i class="bi bi-house-door-fill"></i><br>Početna -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_224_5704)">
+                                <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z" fill="#247BA0"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_224_5704">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg><br>Početna
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="footer-link">
+                            <!-- <img src="/assets/img/send-24x24.png" alt="" class=""> -->
+                            <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5 2.6665L11.5 13.6665" stroke="#3e505b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.5 2.6665L15.5 22.6665L11.5 13.6665L2.5 9.6665L22.5 2.6665Z" stroke="#3e505b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg><br>Napravi objavu
+                        </a>
                     </div>
                 </div>
             </div>
