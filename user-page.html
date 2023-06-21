@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="sr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EDEN</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="One Touch">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:title" content="">
+        <meta property="og:type" content="">
+        <meta property="og:url" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+
+        <link rel="icon" href="/favicon.ico">
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="assets/css/otwd.css">
+
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav class="navbar navbar-expand-sm" aria-label="Main navbar top">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/img/eden-logo-100x55.png" class="img-fluid" alt="eden logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ms-auto justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">početna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">uslovi korišćenja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">informacije</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">kontakt</a>
+                        </li>
+                        <li class="nav-item user-item d-flex flex-row">
+                            <i class="bi bi-chat mx-4 position-relative d-none d-sm-block">
+                                <span class="position-absolute top-0 start-100 translate-middle badge">+89<span class="visually-hidden">unread messages</span></span>
+                            </i>
+                            <i class="bi bi-box-arrow-in-right me-2"></i>
+                            <a class="nav-link" href="/login.html">odjava</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+          
+        <!-- header start-->
+        <header class="py-5" style="background-color: var(--e-dark);">
+            <div class="container-fluid">
+                <div class="header-content-box">
+                    <!-- <div class="cta-box my-5 position-absolute top-50 start-50 translate-middle">
+                        <a class="btn btn-large btn-header py-2 mt-5 me-3" href="#" role="button">
+                            <i class="bi bi-camera-video"></i>
+                            <span class="mx-3">pogledaj video</span>
+                        </a>
+                        <a class="btn btn-large btn-header-inv py-2 mt-5 ms-3" href="#" role="button">
+                            <i class="bi bi-send"></i>
+                            <span class="mx-3">napravi objavu</span>
+                        </a>
+                    </div> -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="ex-basic-info text-center white">
+                                <h2>user@mail.com</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end-->
+        
+
+        <!-- content start-->
+        <div class="edn-alt-layout">
+            <main class="edn-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="text-center title-line my-5">Upravljanje objavama</h2> <!-- SAKRIJ LOGOVANOM KORISNIKU -->
+                        </div>
+                    </div>
+
+                    <!-- umrlice layout-->
+                    <div class="row">
+                        <div class="col-12 my-4">
+                            <div class="position-relative">
+                                <div class="position-absolute top-50 start-50 translate-middle">
+                                    <a class="btn btn-large btn-header-inv py-2 float-xl-start" href="#" role="button">
+                                        <i class="bi bi-send"></i>
+                                        <span class="mx-3">kreiraj prvu objavu</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table">
+                                <thead>
+                                  <tr class="table-secondary">
+                                    <th scope="col">Objava</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Akcija</th>
+                                    <th scope="col">Pregled</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <!--ime objave-->
+                                    <th>John Doe Jonson</th>
+                                    
+                                    <!-- status objave-->
+                                    <td>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.99 9.5C21.99 8.78 21.62 8.15 21.05 7.8L12 2.5L2.95 7.8C2.38 8.15 2 8.78 2 9.5V19.5C2 20.6 2.9 21.5 4 21.5H20C21.1 21.5 22 20.6 22 19.5L21.99 9.5ZM19.99 9.5V9.51L12 14.5L4 9.5L12 4.82L19.99 9.5ZM4 19.5V11.84L12 16.86L19.99 11.87L20 19.5H4Z" fill="#3e505b"/>
+                                        </svg> <!-- draft -->
+                                    </td>
+                                    
+                                    <!-- Akcija -->
+                                    <td>
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Uredi objavu">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#3e505b" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.81 7.94L13.06 4.19L4 13.25V17H7.75L16.81 7.94ZM6 15V14.08L13.06 7.02L13.98 7.94L6.92 15H6Z" fill="#3e505b"/>
+                                                <path d="M19.71 5.04C20.1 4.65 20.1 4.02 19.71 3.63L17.37 1.29C17.17 1.09 16.92 1 16.66 1C16.41 1 16.15 1.1 15.96 1.29L14.13 3.12L17.88 6.87L19.71 5.04Z" fill="#3e505b"/>
+                                                <path d="M22 19H2V23H22V19Z" fill="#3e505b"/>
+                                            </svg><!-- edit-->
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Obriši objavu">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 2C6.47 2 2 6.47 2 12C2 17.53 6.47 22 12 22C17.53 22 22 17.53 22 12C22 6.47 17.53 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM15.59 7L12 10.59L8.41 7L7 8.41L10.59 12L7 15.59L8.41 17L12 13.41L15.59 17L17 15.59L13.41 12L17 8.41L15.59 7Z" fill="#E03616"/>
+                                            </svg><!-- delete-->
+                                        </button>
+                                    </td>
+
+                                    <!-- Pregled -->
+                                    <td>
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Pregledaj objavu">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.11 3 19 3ZM19 19H5V7H19V19ZM13.5 13C13.5 13.83 12.83 14.5 12 14.5C11.17 14.5 10.5 13.83 10.5 13C10.5 12.17 11.17 11.5 12 11.5C12.83 11.5 13.5 12.17 13.5 13ZM12 9C9.27 9 6.94 10.66 6 13C6.94 15.34 9.27 17 12 17C14.73 17 17.06 15.34 18 13C17.06 10.66 14.73 9 12 9ZM12 15.5C10.62 15.5 9.5 14.38 9.5 13C9.5 11.62 10.62 10.5 12 10.5C13.38 10.5 14.5 11.62 14.5 13C14.5 14.38 13.38 15.5 12 15.5Z" fill="#3e505b"/>
+                                        </svg><!-- view -->
+                                        </button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <!--ime objave-->
+                                    <th>John Doe Jonson</th>
+                                    
+                                    <!-- status objave-->
+                                    <td>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" title="čeka" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 5.18L9.59 16.6L5.35 12.36L6.76 10.95L9.59 13.78L19.59 3.78L21 5.18ZM11 20C6.59 20 3 16.41 3 12C3 7.59 6.59 4 11 4C12.57 4 14.04 4.46 15.28 5.25L16.73 3.8C15.1 2.67 13.13 2 11 2C5.48 2 1 6.48 1 12C1 17.52 5.48 22 11 22C12.73 22 14.36 21.56 15.78 20.78L14.28 19.28C13.28 19.74 12.17 20 11 20ZM18 15H15V17H18V20H20V17H23V15H20V12H18V15Z" fill="#3e505b"/>
+                                        </svg><!-- published -->
+                                    </td>
+                                    
+                                    <!-- Akcija -->
+                                    <td>
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Uredi objavu">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#3e505b" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.81 7.94L13.06 4.19L4 13.25V17H7.75L16.81 7.94ZM6 15V14.08L13.06 7.02L13.98 7.94L6.92 15H6Z" fill="#3e505b"/>
+                                                <path d="M19.71 5.04C20.1 4.65 20.1 4.02 19.71 3.63L17.37 1.29C17.17 1.09 16.92 1 16.66 1C16.41 1 16.15 1.1 15.96 1.29L14.13 3.12L17.88 6.87L19.71 5.04Z" fill="#3e505b"/>
+                                                <path d="M22 19H2V23H22V19Z" fill="#3e505b"/>
+                                            </svg><!-- edit-->
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Obriši objavu">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 2C6.47 2 2 6.47 2 12C2 17.53 6.47 22 12 22C17.53 22 22 17.53 22 12C22 6.47 17.53 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM15.59 7L12 10.59L8.41 7L7 8.41L10.59 12L7 15.59L8.41 17L12 13.41L15.59 17L17 15.59L13.41 12L17 8.41L15.59 7Z" fill="#E03616"/>
+                                            </svg><!-- delete-->
+                                        </button>
+                                    </td>
+
+                                    <!-- Pregled -->
+                                    <td>
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Pregledaj objavu">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.11 3 19 3ZM19 19H5V7H19V19ZM13.5 13C13.5 13.83 12.83 14.5 12 14.5C11.17 14.5 10.5 13.83 10.5 13C10.5 12.17 11.17 11.5 12 11.5C12.83 11.5 13.5 12.17 13.5 13ZM12 9C9.27 9 6.94 10.66 6 13C6.94 15.34 9.27 17 12 17C14.73 17 17.06 15.34 18 13C17.06 10.66 14.73 9 12 9ZM12 15.5C10.62 15.5 9.5 14.38 9.5 13C9.5 11.62 10.62 10.5 12 10.5C13.38 10.5 14.5 11.62 14.5 13C14.5 14.38 13.38 15.5 12 15.5Z" fill="#3e505b"/>
+                                        </svg><!-- view -->
+                                        </button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- content start-->
+
+        <!--  footer start-->
+        <footer class="footer mt-5 py-3">
+            <div class="container text-center d-none d-sm-block">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto">
+                        <p><span class="text-muted">Place sticky footer content here.</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container mob-footer d-block d-sm-none">
+                <div class="row text-center">
+                    <div class="col-4">
+                        <a href="#" class="footer-link">
+                            <i class="bi bi-chat mx-4 position-relative">
+                                <span class="position-absolute top-0 start-100 translate-middle badge">+9<span class="visually-hidden">unread messages</span></span>
+                            </i><br>Notifikacije
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="footer-link active">
+                            <!-- <i class="bi bi-house-door-fill"></i><br>Početna -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_224_5704)">
+                                <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z" fill="#247BA0"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_224_5704">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg><br>Početna
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="footer-link">
+                            <!-- <img src="/assets/img/send-24x24.png" alt="" class=""> -->
+                            <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5 2.6665L11.5 13.6665" stroke="#3e505b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.5 2.6665L15.5 22.6665L11.5 13.6665L2.5 9.6665L22.5 2.6665Z" stroke="#3e505b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg><br>Napravi objavu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--  footer start-->
+
+        
+        <script src="/assets/js/bootstrap.bundle.min.js"></script>
+        <script>
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        </script>
+    </body>
+</html>

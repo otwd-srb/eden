@@ -47,6 +47,10 @@ footer {
     position: relative;
     bottom: 0;
 }
+body.reg-bgd footer {
+    position: absolute;
+    width: 100%;
+}
 .footer-link {
     text-decoration: none;
     color: var(--e-body-color);
@@ -144,6 +148,7 @@ header h1 {
     color: var(--e-white);
     margin: 3rem 0;
     padding: 0;
+    text-wrap: balance;
 }
 
 /*header buttons; search button*/
@@ -418,8 +423,6 @@ nav button.nav-link {
     /* position: relative;
     top: 50%; */
 }
-
-
 .log-box h2,
 .reg-box h2 {
     font-size: var(--e-font-size-500);
@@ -453,6 +456,29 @@ nav button.nav-link {
 
 
 
+
+/* user pages*/
+.tooltip-inner {
+    background-color: var(--e-blue);
+    box-shadow: 0px 0px 4px var(--e-blue);
+    opacity: 1 !important;
+}
+.tooltip-arrow::before {
+    background-color: var(--e-blue);
+    color: var(--e-blue);
+}
+.tooltip.bs-tooltip-right .tooltip-arrow::before {
+    border-right-color: var(--e-blue) !important;
+}
+.tooltip.bs-tooltip-left .tooltip-arrow::before {
+    border-left-color: var(--e-blue) !important;
+}
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: var(--e-blue) !important;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: var(--e-blue) !important;
+}
 
 
 
@@ -508,7 +534,12 @@ nav button.nav-link {
     .reg-box,
     .log-box {
         position: relative;
+    }
+    .reg-box {
         top: 5rem;
+    }
+    .log-box {
+        top: 1rem;
     }
     .navbar-brand {
         margin-left: 4em;
