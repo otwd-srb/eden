@@ -79,18 +79,96 @@
         <div class="inner-layout">
             <main class="edn-main">
                 <div class="container">
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-auto">
-                            <div class="reg-box">
-                                <p class="text-center mb-5">
+                    <div class="row justify-content-lg-center">
+                        <div class="col-md-auto py-5">
+
+                            <form id="signUpForm" action="#!" class="mt-5">
+                                <!-- start step indicators -->
+                                <div class="form-header d-flex mb-4">
+                                    <span class="stepIndicator">Account Setup</span>
+                                    <span class="stepIndicator">Social Profiles</span>
+                                    <span class="stepIndicator">Personal Details</span>
+                                </div>
+                                <!-- end step indicators -->
+                            
+                                <!-- step one -->
+                                <div class="step">
+                                    <p class="text-center mb-4">Create your account</p>
+                                    <div class="form-floating mb-3">
+                                        <input type="name" class="form-control" id="ex-ime" placeholder="ex-ime" required >
+                                        <label for="ex-ime">Ime i prezime preminulog</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="name" class="form-control" id="ex-mesto" placeholder="ex-mesto" required >
+                                        <label for="ex-mesto">Mesto</label>
+                                    </div>
+
+
+
+
+
+                                    <div class="mb-3">
+                                        <input type="password" placeholder="Password" oninput="this.className = ''" name="password">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="password" placeholder="Confirm Password" oninput="this.className = ''" name="password">
+                                    </div>
+                                </div>
+                            
+                                <!-- step two -->
+                                <div class="step">
+                                    <p class="text-center mb-4">Your presence on the social network</p>
+                                    <div class="mb-3">
+                                        <input type="text" placeholder="Linked In" oninput="this.className = ''" name="linkedin">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" placeholder="Twitter" oninput="this.className = ''" name="twitter">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" placeholder="Facebook" oninput="this.className = ''" name="facebook">
+                                    </div>
+                                </div>
+                            
+                                <!-- step three -->
+                                <div class="step">
+                                    <p class="text-center mb-4">We will never sell it</p>
+                                    <div class="mb-3">
+                                        <input type="text" placeholder="Full name" oninput="this.className = ''" name="fullname">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" placeholder="Mobile" oninput="this.className = ''" name="mobile">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" placeholder="Address" oninput="this.className = ''" name="address">
+                                    </div>
+                                </div>
+                            
+                                <!-- start previous / next buttons -->
+                                <div class="form-footer d-flex">
+                                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                </div>
+                                <!-- end previous / next buttons -->
+                            </form>
+
+
+
+
+
+                                <!-- <p class="text-center mb-5">
                                     <svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M50 5C50 2.25 47.75 0 45 0H5C2.25 0 0 2.25 0 5V35C0 37.75 2.25 40 5 40H45C47.75 40 50 37.75 50 35V5ZM45 5L25 17.5L5 5H45ZM45 35H5V10L25 22.5L45 10V35Z" fill="#3D4F5A" fill-opacity="0.6"/>
                                     </svg>
                                 </p>
                                 <h2 class="text-center mb-4">Proverite svoj email nalog za verifikaciju naloga</h2>
                                 <button type="submit" class="btn btn-primary d-flex search-btn w-100 mb-5">PROVERI EMAIL</button>
-                                <p class="text-center">Naš email nije stigao? <span><a href="#" class="txt-link">Pošalji ponovo</a></span></p>
-                           </div>
+                                <p class="text-center">Naš email nije stigao? <span><a href="#" class="txt-link">Pošalji ponovo</a></span></p> -->
+                           
                         </div>
                     </div>
                 </div>
@@ -147,5 +225,6 @@
 
         
         <script src="assets/js/bootstrap.bundle.min.js" async defer></script>
+        <script src="assets/js/objava.js"></script>
     </body>
 </html>
