@@ -81,80 +81,109 @@
                 <div class="container">
                     <div class="row justify-content-lg-center">
                         <div class="col-md-auto py-5">
+                            <div class="obj-box">
 
-                            <form id="signUpForm" action="#!" class="mt-5">
-                                <!-- start step indicators -->
-                                <div class="form-header d-flex mb-4">
-                                    <span class="stepIndicator">Account Setup</span>
-                                    <span class="stepIndicator">Social Profiles</span>
-                                    <span class="stepIndicator">Personal Details</span>
-                                </div>
-                                <!-- end step indicators -->
-                            
-                                <!-- step one -->
-                                <div class="step">
-                                    <p class="text-center mb-4">Create your account</p>
-                                    <div class="form-floating mb-3">
-                                        <input type="name" class="form-control" id="ex-ime" placeholder="ex-ime" required >
-                                        <label for="ex-ime">Ime i prezime preminulog</label>
+                                <form id="signUpForm" action="#!" class="mt-5">
+                                    <!-- start step indicators -->
+                                    <div class="form-header d-flex mb-4">
+                                        <span class="stepIndicator">Osnovne informacije</span>
+                                        <span class="stepIndicator">Pregled</span>
+                                        <span class="stepIndicator">Validacija</span>
+                                        <span class="stepIndicator">Plaćanje</span>
+                                    </div>
+                                    <!-- end step indicators -->
+                                
+                                    <!-- step one -->
+                                    <div class="step">
+                                        <p class="text-center mb-4">Osnovni podaci preminulog</p>
+                                        <div class="form-floating mb-3">
+                                            <input type="name" class="form-control" id="ex-ime" placeholder="ex-ime" required >
+                                            <label for="ex-ime">Ime i prezime preminulog</label>
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <input type="name" class="form-control" id="ex-mesto" placeholder="ex-mesto" required >
+                                            <label for="ex-mesto">Mesto</label>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <input type="number" class="form-control" id="ex-rodj" placeholder="ex-rodj" required >
+                                                    <label for="ex-rodj">Godina rođenja</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <input type="number" class="form-control" id="ex-smrt" placeholder="ex-smrt" required >
+                                                    <label for="ex-smrt">Godina smrti</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px" required></textarea>
+                                            <label for="floatingTextarea2">Sadržaj</label>
+                                        </div>
+                                        
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
+                                            <label for="floatingTextarea2">Potpis</label>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- step two -->
+                                    <div class="step">
+                                        <p class="text-center mb-4">Pregled objave</p>
+                                        <article class="edn-single-ex-container my-4">
+                                            <div class="single-ex-box">
+                                                <div class="row">
+                                                    <div class="col-12 col-xl-3">
+                                                        <img src="/assets/img/john_doe_jonson.jpg" alt="John Doe Jonson" class="ex-img">
+                                                    </div>
+                                                    <div class="col-12 col-xl-9 position-relative">
+                                                        <div class="ex-basic-info-single">
+                                                            <h3>John Doe Jonson</h3>
+                                                            <p>01.01.1921 - 11.03.2023<br>New York</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ex-details mt-3">
+                                                    <p>Aenean quis ligula a ante facilisis pellentesque.</p>
+                                                    <p>Sed finibus augue lectus, quis tincidunt enim pellentesque et. Aenean quis ligula a ante facilisis pellentesque. Proin vitae dolor sed nisi ultricies lobortis eu quis ex. In hac habitasse platea dictumst. Duis porttitor arcu id sem porttitor vehicula. Fusce sodales nisl sit amet aliquam sagittis. Donec blandit dictum nibh a iaculis. Donec eu nisi rhoncus, suscipit lorem ac, convallis erat. Quisque fringilla laoreet imperdiet.</p>
+                                                    <p>Aenean quis ligula a ante facilisis pellentesque. Proin vitae dolor sed nisi ultricies lobortis eu quis ex. In hac habitasse platea dictumst. Duis porttitor arcu id sem porttitor vehicula. Fusce sodales nisl sit amet aliquam sagittis. Donec blandit dictum nibh a iaculis. Donec eu nisi rhoncus, suscipit lorem ac, convallis erat. Quisque fringilla laoreet imperdiet.</p>
+                                                    <p>Fusce sodales nisl sit amet aliquam sagittis. Donec blandit dictum nibh a iaculis. Donec eu nisi rhoncus, suscipit lorem ac, convallis erat. Quisque fringilla laoreet imperdiet.</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                
+                                    <!-- step three -->
+                                    <div class="step">
+                                        <p class="text-center mb-4">Dokaz identiteta</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi magnam velit corrupti doloremque, earum illo iure reprehenderit deleniti, assumenda incidunt? Non dolorum laboriosam iusto explicabo corrupti? Dolore, illum itaque?</p>
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
                                     </div>
 
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" type="file" id="formFile">
+                                    <!-- step four -->
+                                    <div class="step">
+                                        <p class="text-center mb-4">Uputstvo za plaćanje</p>
+                                        <img src="/assets/img/uplatnica_blanko.png" class="img-fluid my-3" alt="" >
                                     </div>
-
-                                    <div class="form-floating mb-3">
-                                        <input type="name" class="form-control" id="ex-mesto" placeholder="ex-mesto" required >
-                                        <label for="ex-mesto">Mesto</label>
+                                
+                                    <!-- start previous / next buttons -->
+                                    <div class="form-footer d-flex">
+                                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Prethodna</button>
+                                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Sledeća</button>
                                     </div>
-
-
-
-
-
-                                    <div class="mb-3">
-                                        <input type="password" placeholder="Password" oninput="this.className = ''" name="password">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="password" placeholder="Confirm Password" oninput="this.className = ''" name="password">
-                                    </div>
-                                </div>
-                            
-                                <!-- step two -->
-                                <div class="step">
-                                    <p class="text-center mb-4">Your presence on the social network</p>
-                                    <div class="mb-3">
-                                        <input type="text" placeholder="Linked In" oninput="this.className = ''" name="linkedin">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" placeholder="Twitter" oninput="this.className = ''" name="twitter">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" placeholder="Facebook" oninput="this.className = ''" name="facebook">
-                                    </div>
-                                </div>
-                            
-                                <!-- step three -->
-                                <div class="step">
-                                    <p class="text-center mb-4">We will never sell it</p>
-                                    <div class="mb-3">
-                                        <input type="text" placeholder="Full name" oninput="this.className = ''" name="fullname">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" placeholder="Mobile" oninput="this.className = ''" name="mobile">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" placeholder="Address" oninput="this.className = ''" name="address">
-                                    </div>
-                                </div>
-                            
-                                <!-- start previous / next buttons -->
-                                <div class="form-footer d-flex">
-                                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-                                </div>
-                                <!-- end previous / next buttons -->
-                            </form>
+                                    <!-- end previous / next buttons -->
+                                </form>
 
 
 
@@ -168,7 +197,7 @@
                                 <h2 class="text-center mb-4">Proverite svoj email nalog za verifikaciju naloga</h2>
                                 <button type="submit" class="btn btn-primary d-flex search-btn w-100 mb-5">PROVERI EMAIL</button>
                                 <p class="text-center">Naš email nije stigao? <span><a href="#" class="txt-link">Pošalji ponovo</a></span></p> -->
-                           
+                            </div>
                         </div>
                     </div>
                 </div>
