@@ -239,19 +239,20 @@ h2.title-line::after {
 
 
 /* Main layout*/
-.edn-layout {
-    display: grid;
-    grid-template-areas: "main side";
-    grid-template-columns: 3fr 1fr;
-    gap: 1rem;
-    padding: 0 5rem;
-}
+.edn-layout,
 .edn-alt-layout {
     display: grid;
+    gap: 1rem;
+    padding: 0 4.5rem;
+}
+
+.edn-layout {
+    grid-template-areas: "main side";
+    grid-template-columns: 3fr 1fr;
+}
+.edn-alt-layout {
     grid-template-areas: "main";
     grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 0 5rem;
 }
 .edn-main {
     grid-area: main;
@@ -290,6 +291,10 @@ a .edn-ex-container:hover {
     left: 50%;
     transform: translateX(-50%);
     max-height: 180px;
+    width: 100%;
+}
+figure img.ex-img {
+    width: auto;
 }
 .ex-soc-data {
     display: flex;
@@ -310,8 +315,13 @@ a .edn-ex-container:hover {
     border: 5px solid var(--e-white);
     width: 180px;
 }
+.nav-event {
+    display: flex;
+    flex-direction: row;
+}
 .edn-single-ex-container {
     padding: 20px;
+    margin: 0 2.3rem;
 }
 .single-ex-box {
     padding: 20px;
@@ -328,6 +338,7 @@ a .edn-ex-container:hover {
 .nav-tabs {
     --bs-nav-tabs-border-color: none;
     --bs-nav-tabs-border-width: 0;
+    margin-left: .5rem;
 }
 nav button.active {
     border-bottom: 2px solid var(--e-blue) !important;
@@ -372,7 +383,11 @@ nav button.nav-link {
     background-color: var(--e-blue);
     border-color: var(--e-blue);
 }
-
+.right-arrow svg,
+.left-arrow svg {
+    position: relative;
+    top: 50%;
+}
 
 
 
@@ -577,7 +592,7 @@ nav button.nav-link {
     display: none;
 }
 #signUpForm input {
-    padding: 15px 20px;
+    /* padding: 15px 20px; */
     width: 100%;
     font-size: 1em;
     border: 1px solid #e3e3e3;
@@ -612,7 +627,6 @@ nav button.nav-link {
 #signUpForm .form-footer button:hover {
   opacity: 0.8;
 }
-
 #signUpForm .form-footer #prevBtn {
     background-color: #fff;
     color: #009688;
@@ -632,8 +646,25 @@ nav button.nav-link {
 .step .ex-basic-info-single {
     left: 3rem;
 }
-
-
+.ex-img-form-upload {
+    padding: 15px 20px;
+}
+.form-switch {
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 0;
+    margin: 0;
+}
+.custome-switch {
+    width: 60px !important;
+    height: 30px;
+    border-radius: 20px !important;
+    margin: 0 !important;
+}
+#foto.custome-switch {
+    position: relative;
+    left: 50%;
+}
 
 @media (min-width: 768px) {
     .edn-main {
@@ -690,6 +721,13 @@ nav button.nav-link {
     .log-box {
         top: 1rem;
     }
+    .obj-box {
+        width: auto;
+        position: relative;
+        left: auto;
+        top: auto;
+        padding: 0;
+    }
     .navbar-brand {
         margin-left: 4em;
     }
@@ -734,9 +772,19 @@ nav button.nav-link {
         display: block;
         padding: 0;
     }
+    .edn-single-ex-container {
+        margin: 0 2.5rem;
+        padding: 0;
+    }
+    .ex-img {
+        width: auto;
+    }
     .ex-basic-info-single {
         position: relative;
         text-align: center;
+    }
+    #nav-foto-tab {
+        margin-right: 0;
     }
     .status {
         font-size: medium;
