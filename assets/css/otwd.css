@@ -321,11 +321,15 @@ figure img.ex-img {
 }
 .edn-single-ex-container {
     padding: 20px;
-    margin: 0 2.3rem;
+    margin: 0 5rem;
+    /* width: 100%; */
 }
 .single-ex-box {
     padding: 20px;
     border: 10px solid hsl(197, 7%, 38%);
+}
+.ex-img-container {
+    height: 180px;
 }
 .ex-basic-info-single {
     position: absolute;
@@ -386,7 +390,9 @@ nav button.nav-link {
 .right-arrow svg,
 .left-arrow svg {
     position: relative;
-    top: 50%;
+    top: 15rem;
+    width: 65px;
+    height: 65px;
 }
 
 
@@ -775,6 +781,7 @@ nav button.nav-link {
     .edn-single-ex-container {
         margin: 0 2.5rem;
         padding: 0;
+        width: auto;
     }
     .ex-img {
         width: auto;
@@ -782,6 +789,21 @@ nav button.nav-link {
     .ex-basic-info-single {
         position: relative;
         text-align: center;
+    }
+    .right-arrow svg,
+    .left-arrow svg {
+        position: relative;
+        top: 5rem;
+        width: 48px;
+        height: 48px;
+        background-color: var(--e-white);
+        border: 1px solid var(--e-blue);
+    }
+    .left-arrow svg {
+        margin-left: 1rem;
+    }
+    .right-arrow svg {
+        margin-right: 1rem;
     }
     #nav-foto-tab {
         margin-right: 0;
@@ -797,4 +819,33 @@ nav button.nav-link {
     #signUpForm {
         max-width: 400px;
     }
+}
+
+
+
+
+
+
+
+#lightbox {
+	position:fixed; /* keeps the lightbox window in the current viewport */
+	top:0; 
+	left:0; 
+	width:100%; 
+	height:100%; 
+	background:url(https://assets.codepen.io/210284/overlay.png) repeat; 
+	text-align:center;
+}
+#lightbox p {
+	text-align:right; 
+	color:#fff; 
+	margin-right:20px; 
+	font-size:12px; 
+}
+#lightbox img {
+	box-shadow:0 0 25px #111;
+	max-width:940px;
+}
+#imgbox img {
+    width: 100%;
 }

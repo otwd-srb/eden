@@ -109,76 +109,74 @@
 
                     <!-- umrlice layout-->
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12" id="plc-arrow">
                             <div class="nav-event justify-content-between">
                                 <div class="left-arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 65" fill="none" id="left">
                                         <path d="M40.5 48.3335L24.5 32.3335L40.5 16.3335" stroke="#247BA0" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </div>
-                                <article class="edn-single-ex-container my-4">
-                                    <div class="single-ex-box">
-                                        <div class="row">
-                                            <div class="col-12 col-xl-2 col-md-2 col-sm-2">
-                                                <div class="ex-img-container">
-                                                    <img src="/assets/img/john_doe_jonson.jpg" alt="John Doe Jonson" class="ex-img">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-xl-10 col-md-10 col-sm-10 position-relative">
-                                                <div class="ex-basic-info-single">
-                                                    <h3>John Doe Jonson</h3>
-                                                    <p>01.01.1921 - 11.03.2023<br>New York</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ex-details mt-3">
-                                            <p>Aenean quis ligula a ante facilisis pellentesque.</p>
-                                            <p>Sed finibus augue lectus, quis tincidunt enim pellentesque et. Aenean quis ligula a ante facilisis pellentesque. Proin vitae dolor sed nisi ultricies lobortis eu quis ex. In hac habitasse platea dictumst. Duis porttitor arcu id sem porttitor vehicula. Fusce sodales nisl sit amet aliquam sagittis. Donec blandit dictum nibh a iaculis. Donec eu nisi rhoncus, suscipit lorem ac, convallis erat. Quisque fringilla laoreet imperdiet.</p>
-                                            <p>Fusce sodales nisl sit amet aliquam sagittis. Donec blandit dictum nibh a iaculis. Donec eu nisi rhoncus, suscipit lorem ac, convallis erat. Quisque fringilla laoreet imperdiet.</p>
-                                        </div>
-                                        <!-- Potpis start-->
-                                        <div class="row justify-content-end mt-5">
-                                            <div class="col-md-6 col-xl-4 col-xxl-4 text-center">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit quas deleniti voluptatibus explicabo amet doloribus ullam possimus natus, temporibus alias quod nihil odit autem atque quam optio, hic accusamus iure?
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- Potpis end-->
-                                    </div>
-                                    <div class="ex-soc-data mt-3">
-                                        <a href="#">
-                                            <div class="ex-candle">
-                                                <img src="/assets/img/candle-24x24.png" alt="" class="">
-                                                <span>24</span>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="ex-comments">
-                                                <i class="bi bi-chat"></i>
-                                                <span>24</span>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="ex-share">
-                                                <img src="/assets/img/upload-24x24.png" alt="podeli" class="">
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="ex-msg">
-                                                <img src="/assets/img/send-24x24.png" alt="komentar" class="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <hr>
-                                </article>
                                 <div class="right-arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 65" fill="none" id="right">
                                         <path d="M24.5 48.3335L40.5 32.3335L24.5 16.3335" stroke="#247BA0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </div>
                             </div>
-
+                            <article class="edn-single-ex-container my-4" id="art01">
+                                <div class="single-ex-box">
+                                    <div class="row">
+                                        <div class="col-12 col-xl-2 col-md-2 col-sm-2">
+                                            <div class="ex-img-container">
+                                                <!-- <img src="/assets/img/john_doe_jonson.jpg" alt="John Doe Jonson" class="ex-img"> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-xl-10 col-md-10 col-sm-10 position-relative">
+                                            <div class="ex-basic-info-single">
+                                                <h3>John Doe Jonson</h3>
+                                                <p>01.01.1921 - 11.03.2023<br>New York</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ex-details mt-3">
+                                        <p>Aenean quis ligula a ante facilisis pellentesque.</p>
+                                        <!-- <p>Sed finibus augue lectus, quis tincidunt enim pellentesque et. Aenean quis ligula a ante facilisis pellentesque. Proin vitae dolor sed nisi ultricies lobortis eu quis ex. In hac habitasse platea dictumst. Duis porttitor arcu id sem porttitor vehicula. Fusce sodales nisl sit amet aliquam sagittis. Donec blandit dictum nibh a iaculis. Donec eu nisi rhoncus, suscipit lorem ac, convallis erat. Quisque fringilla laoreet imperdiet.</p>
+                                        <p>Fusce sodales nisl sit amet aliquam sagittis. Donec blandit dictum nibh a iaculis. Donec eu nisi rhoncus, suscipit lorem ac, convallis erat. Quisque fringilla laoreet imperdiet.</p> -->
+                                    </div>
+                                    <!-- Potpis start-->
+                                    <div class="row justify-content-end mt-5">
+                                        <div class="col-md-6 col-xl-4 col-xxl-4 text-center">
+                                            <p>Lorem ipsum dolor <!-- sit amet consectetur, adipisicing elit. Sit quas deleniti voluptatibus explicabo amet doloribus ullam possimus natus, temporibus alias quod nihil odit autem atque quam optio, hic accusamus iure? --></p>
+                                        </div>
+                                    </div>
+                                    <!-- Potpis end-->
+                                </div>
+                                <div class="ex-soc-data mt-3">
+                                    <a href="#">
+                                        <div class="ex-candle">
+                                            <img src="/assets/img/candle-24x24.png" alt="" class="">
+                                            <span>24</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="ex-comments">
+                                            <img src="/assets/img/mdi_message-bubble-outline-24x24.png" alt="podeli" class="">
+                                            <!-- <i class="bi bi-chat"></i> -->
+                                            <span>24</span>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="ex-share">
+                                            <img src="/assets/img/photo-outlined-24x24.png" alt="podeli" class="">
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="ex-msg">
+                                            <img src="/assets/img/email-outlined-24x24.png" alt="komentar" class="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <hr>
+                            </article>
                         </div>
                     </div>
 
@@ -214,7 +212,9 @@
                                     <div class="row mb-5">
                                         <div class="col-12 col-md-6 col-xl-6 py-3">
                                             <div class="ex-img-box">
-                                                <img src="/assets/img/ex-album-img-01.jpg" alt="" class="img-fluid">
+                                                <a href="/assets/img/ex-album-img-01.jpg" class="lightbox_trigger">
+                                                    <img src="/assets/img/ex-album-img-01.jpg" alt="" class="img-fluid">
+                                                </a>
                                                 <p>21.05.2023.</p>
                                                 <p>Photo title</p>
                                                 <p>Aenean quis ligula a ante facilisis pellentesque. Proin vitae dolor sed nisi ultricies lobortis eu quis ex.</p>
@@ -228,9 +228,6 @@
                                                 <p>Aenean quis ligula a ante facilisis pellentesque. Proin vitae dolor sed nisi ultricies lobortis eu quis ex.</p>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="row mb-5">
                                         <div class="col-12 col-md-6 col-xl-6 py-3">
                                             <div class="ex-img-box">
                                                 <img src="/assets/img/ex-album-img-03.jpg" alt="" class="img-fluid">
@@ -305,8 +302,62 @@
         </footer>
         <!--  footer start-->
 
-        
+
+    
+
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/otwd.js"></script>
+        <script>
+            jQuery(document).ready(function($) {
+                
+                $('.lightbox_trigger').click(function(e) {
+                    
+                    //prevent default action (hyperlink) 
+                    e.preventDefault();
+                    
+                    //Get clicked link href 
+                    var image_href = $(this).attr("href");
+                    
+                    /* 
+            If the lightbox window HTML already exists in document, 
+            change the img src to to match the href of whatever link was clicked 
+            
+            If the lightbox window HTML doesn't exists, create it and insert it. 
+            (This will only happen the first time around) 
+            */
+                    
+                    if ($('#lightbox').length > 0) { // #lightbox exists 
+                        
+                        //place href as img src value 
+                        $('#content').html('<img src="' + image_href + '" />');
+                            
+                        //show lightbox window - you could use .show('fast') for a transition 
+                        $('#lightbox').show();
+                    }
+                    
+                    else { //#lightbox does not exist - create and insert (runs 1st time only) 
+                        
+                        //create HTML markup for lightbox window 
+                        var lightbox = 
+                        '<div id="lightbox">' +
+                            '<p>Click to close</p>' +
+                            '<div id="imgbox">' + //insert clicked link's href into img src 
+                                '<img src="' + image_href +'" />' +
+                            '</div>' +	
+                        '</div>';
+                            
+                        //insert lightbox HTML into page 
+                        $('body').append(lightbox);
+                    }
+                    
+                });
+                
+                //Click anywhere on the page to get rid of lightbox window 
+                $('body').on('click', '#lightbox', function() { //must use on, as the lightbox element is inserted into the DOM 
+                    $('#lightbox').hide();
+                });
+            });
+            </script>
     </body>
 </html>

@@ -12,3 +12,15 @@ if (screenWidth < 576) {
   navTab.classList.remove("justify-content-between");
 }
 
+
+
+
+// Arrows
+window.onload = function() {
+    var articleHeight = document.getElementById('art01').offsetHeight;
+    //var parentHeight = document.getElementById('plc-arrow').offsetHeight;
+    var imageTop = articleHeight / 3;
+
+    document.getElementById('left').style.top = imageTop + 'px';
+    document.getElementById('right').style.top = imageTop + 'px';
+}
