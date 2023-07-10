@@ -387,10 +387,14 @@ nav button.nav-link {
     background-color: var(--e-blue);
     border-color: var(--e-blue);
 }
+.right-arrow,
+.left-arrow {
+    position: relative;
+}
 .right-arrow svg,
 .left-arrow svg {
     position: relative;
-    top: 15rem;
+   /*  top: 15rem; */
     width: 65px;
     height: 65px;
 }
@@ -793,7 +797,7 @@ nav button.nav-link {
     .right-arrow svg,
     .left-arrow svg {
         position: relative;
-        top: 5rem;
+        /* top: 5rem; */
         width: 48px;
         height: 48px;
         background-color: var(--e-white);
