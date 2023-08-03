@@ -718,6 +718,9 @@ nav button.nav-link {
         position: relative;
         top: 0.15em;
     }
+    .user-item .dropdown-menu {
+        margin-top: 1rem;
+    }
     .cta-box {
         width: 100%;
     }
@@ -730,6 +733,9 @@ nav button.nav-link {
     }
     .log-box {
         top: 1rem;
+        width: auto;
+        left: auto;
+        margin-bottom: 8rem
     }
     .obj-box {
         width: auto;
@@ -822,6 +828,13 @@ nav button.nav-link {
     }
     #signUpForm {
         max-width: 400px;
+    }
+
+    /*  --  user --  */
+    .user-switch-holder .form-switch input {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
