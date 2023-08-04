@@ -560,7 +560,7 @@ nav button.nav-link {
 }
 #signUpForm .form-header .stepIndicator.finish {
     font-weight: 600;
-    color: #009688;
+    color: #247BA0;
 }
 #signUpForm .form-header .stepIndicator::before {
     content: "";
@@ -571,16 +571,16 @@ nav button.nav-link {
     z-index: 9;
     width: 20px;
     height: 20px;
-    background-color: #d5efed;
+    background-color: #add8eb;
     border-radius: 50%;
     border: 3px solid #ecf5f4;
 }
 #signUpForm .form-header .stepIndicator.active::before {
-    background-color: #a7ede8;
+    background-color: #add8eb;
     border: 3px solid #d5f9f6;
 }
 #signUpForm .form-header .stepIndicator.finish::before {
-    background-color: #009688;
+    background-color: #247BA0;
     border: 3px solid #b7e1dd;
 }
 #signUpForm .form-header .stepIndicator::after {
@@ -593,10 +593,10 @@ nav button.nav-link {
     background-color: #f3f3f3;
 }
 #signUpForm .form-header .stepIndicator.active::after {
-    background-color: #a7ede8;
+    background-color: #add8eb;
 }
 #signUpForm .form-header .stepIndicator.finish::after {
-    background-color: #009688;
+    background-color: #247BA0;
 }
 #signUpForm .form-header .stepIndicator:last-child:after {
     display: none;
@@ -623,8 +623,8 @@ nav button.nav-link {
     gap: 20px;
 }
 #signUpForm .form-footer button{
-    background-color: #009688;
-    border: 1px solid #009688 !important;
+    background-color: #247BA0;
+    border: 1px solid #247BA0 !important;
     color: #ffffff;
     border: none;
     padding: 13px 30px;
@@ -639,7 +639,7 @@ nav button.nav-link {
 }
 #signUpForm .form-footer #prevBtn {
     background-color: #fff;
-    color: #009688;
+    color: #247BA0;
 }
 #formFile::before {
     content: "Fotografija";
@@ -724,18 +724,20 @@ nav button.nav-link {
     .cta-box {
         width: 100%;
     }
-    .reg-box,
+    /* .reg-box,
     .log-box {
         position: relative;
     }
     .reg-box {
         top: 5rem;
-    }
-    .log-box {
+    } */
+    .log-box,
+    .reg-box {
         top: 1rem;
         width: auto;
         left: auto;
-        margin-bottom: 8rem
+        margin-bottom: 8rem;
+        position: relative;
     }
     .obj-box {
         width: auto;
