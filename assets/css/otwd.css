@@ -537,6 +537,7 @@ nav ol.breadcrumb {
 }
 .user-ex-img {
     max-width: 200px;
+    width: 100%;
     /* float: left;
     margin-right: 1rem;*/
 } 
@@ -774,6 +775,9 @@ nav ol.breadcrumb {
     }
     .form-control {
         font-size: var(--e-font-size-300);
+    }
+    #signUpForm {
+        padding: 20px;
     }
     .intro {
         margin: 0;
