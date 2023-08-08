@@ -773,7 +773,7 @@ nav ol.breadcrumb {
         width: 15%;
     }
     .form-control {
-        font-size: var(--e-font-size-100);
+        font-size: var(--e-font-size-300);
     }
     .intro {
         margin: 0;
