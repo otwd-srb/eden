@@ -8,7 +8,7 @@ by OTWD
     --e-line-height: 24px;
     --e-body-color: hsl(203, 19%, 30%, 1);
 
-    --e-font-family-sec: 'Lobster Two', cursive;
+    --e-font-family-sec: 'Marck Script', cursive;
 
     --e-font-size-100: .675rem;
     --e-font-size-200: .875rem;
@@ -492,8 +492,18 @@ nav button.nav-link {
     background-color: #EA4335;
     border-color: #EA4335;
 }
+nav ol.breadcrumb {
+    margin: 1rem auto;
+}
+.breadcrumb-item a {
+    color: var(--bs-gray-300);
+}
 
-
+.breadcrumb-item.active,
+.breadcrumb-item a:hover,
+.breadcrumb-item a:focus {
+    color: var(--e-white);
+}
 
 
 /* user pages*/
@@ -789,6 +799,7 @@ nav button.nav-link {
     .edn-alt-layout {
         display: block;
         padding: 0;
+        margin-bottom: 2rem;
     }
     .edn-single-ex-container {
         margin: 0 2.5rem;
@@ -837,6 +848,10 @@ nav button.nav-link {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    nav ol.breadcrumb {
+        margin: 0 auto;
     }
 }
 
