@@ -670,12 +670,15 @@ nav ol.breadcrumb {
 .ex-img-form-upload {
     padding: 15px 20px;
 }
-.form-switch {
+.form-switch,
+.form-switch-tac {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 8fr;
     padding: 0;
     margin: 0;
+}
+.form-switch-tac {
+    grid-template-columns: 1fr 8fr;
 }
 .custome-switch {
     width: 60px !important;
