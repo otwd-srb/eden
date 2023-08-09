@@ -54,7 +54,7 @@ input[type=number] {
 
 #post-form .form-header .stepIndicator.finish {
     font-weight: 600;
-    color: #009688;
+    color: #247BA0;
 }
 
 #post-form .form-header .stepIndicator::before {
@@ -66,18 +66,18 @@ input[type=number] {
     z-index: 9;
     width: 20px;
     height: 20px;
-    background-color: #d5efed;
+    background-color: #add8eb;
     border-radius: 50%;
     border: 3px solid #ecf5f4;
 }
 
 #post-form .form-header .stepIndicator.active::before {
-    background-color: #a7ede8;
+    background-color: #add8eb;
     border: 3px solid #d5f9f6;
 }
 
 #post-form .form-header .stepIndicator.finish::before {
-    background-color: #009688;
+    background-color: #247BA0;
     border: 3px solid #b7e1dd;
 }
 
@@ -92,11 +92,11 @@ input[type=number] {
 }
 
 #post-form .form-header .stepIndicator.active::after {
-    background-color: #a7ede8;
+    background-color: #add8eb;
 }
 
 #post-form .form-header .stepIndicator.finish::after {
-    background-color: #009688;
+    background-color: #247BA0;
 }
 
 #post-form .form-header .stepIndicator:last-child:after {
@@ -144,7 +144,7 @@ input[type=number] {
 
 #post-form .form-footer #prevBtn {
     background-color: #fff;
-    color: #009688;
+    color: #247BA0;
 }
 .ex-img-form-upload {
     padding: 15px 20px !important;
