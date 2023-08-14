@@ -332,8 +332,8 @@ figure img.ex-img {
     height: 180px;
 }
 .ex-basic-info-single {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
 }
 .ex-basic-info-single p {
     margin: 0;
